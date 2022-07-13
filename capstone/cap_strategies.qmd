@@ -1,0 +1,16 @@
+---
+title: "Capstone Exercise 2: Identify treatment and policy strategies"
+---
+
+```{r, echo = FALSE}
+library(downloadthis)
+## Link in Github repo
+download_link(
+  link = "https://github.com/graveja0/cea-workshop-vital/raw/main/case-studies/cs2_healthy-sick-dead.xlsx",
+  button_label = "Download Excel Template",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```

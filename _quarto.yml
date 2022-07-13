@@ -4,17 +4,41 @@ project:
 website:
   title: "Health Economics Modeling Workshop"
   sidebar:
-    style: "docked"
-    search: true
+    style: "floating"
+    search: false
+    collapse-level: 1
     contents:
       - index.qmd
       - schedule.qmd
       - section: "Slides"
         contents:
-          - lectures/lec1_conceptual-and-theoretical-frameworks.qmd
+          - lectures/lec_conceptual-and-theoretical-frameworks.qmd
+          - lectures/lec_foundations-of-cost-effectiveness-analysis.qmd
+          - lectures/lec_incrementa-cea.qmd
+          - lectures/lec_markov.qmd
+          - lectures/lec_structure.qmd
+          - lectures/lec_parameters.qmd
+          - lectures/lec_summarizing-model-outputs.qmd
+          - lectures/lec_one-way-sensitivity.qmd
+          - lectures/lec_psa.qmd
+          - lectures/lec_decision-criteria-and-dissemination.qmd
+          - lectures/lec_microsimulation-and-des.qmd
       - section: "Case Studies"
+        contents:
+          - case-studies/cs_examples.qmd
+          - case-studies/cs_healthy-sick-dead.qmd
+          - case-studies/cs_model-structure.qmd
+          - case-studies/cs_summarizing-outputs.qmd
+          - case-studies/cs_one-way-sensitivity.qmd
+          - case-studies/cs_psa.qmd
       - section: "Capstone Exercises"
-
+        contents:
+          - capstone/cap_specify-the-problem.qmd
+          - capstone/cap_strategies.qmd
+          - capstone/cap_markov-structure.qmd
+          - capstone/cap_parameterize.qmd
+          - capstone/cap_results.qmd
+          - capstone/cap_summarize.qmd
 
 format:
   html:

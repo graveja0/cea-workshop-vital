@@ -3,3 +3,30 @@ title: "Schedule"
 ---
 
 This page will show the schedule.
+
+```{r}
+schedule <- list(
+  day1 = list(
+    "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "1:30 - 3:00" = "L] Incremental cost-effectiveness analysis",
+    "3:15 - 4:00" = "CAP] Identify treatment and policy strategies"
+  ), 
+  day2 = list(
+    
+  ), 
+  day3 = list(
+    
+  ), 
+  day4 = list(
+    
+  ), 
+  day5 = list(
+    
+  )
+)
+```
+

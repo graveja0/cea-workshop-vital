@@ -1,0 +1,12 @@
+---
+title: "6. Curating and transforming model parameters"
+format: revealjs
+---
+
+# Introduction
+
+## Slide 1
+
+Slide 1 content.
+
+![](media/noun-llama-3263829.png)

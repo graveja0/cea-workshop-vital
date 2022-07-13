@@ -7,6 +7,48 @@
     "text": "This is the landing page."
   },
   {
+    "objectID": "case-studies/cs_summarizing-outputs.html",
+    "href": "case-studies/cs_summarizing-outputs.html",
+    "title": "Case Study 4: Summarizing Model Outputs",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "case-studies/cs_examples.html",
+    "href": "case-studies/cs_examples.html",
+    "title": "Case Study 1: Examples of Decision Analysis",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "case-studies/cs_model-structure.html",
+    "href": "case-studies/cs_model-structure.html",
+    "title": "Case Study 3: Structuring a Model",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "case-studies/cs_psa.html",
+    "href": "case-studies/cs_psa.html",
+    "title": "Case Study 6: Probabilistic Sensitivity Analysis",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "case-studies/cs_one-way-sensitivity.html",
+    "href": "case-studies/cs_one-way-sensitivity.html",
+    "title": "Case Study 5: One-Way Sensitivity Analysis",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "case-studies/cs_healthy-sick-dead.html",
+    "href": "case-studies/cs_healthy-sick-dead.html",
+    "title": "Case Study 2: Simple Markov Model",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -14,9 +56,121 @@
     "text": "1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "lectures/lec1_conceptual-and-theoretical-frameworks.html#slide-1",
-    "href": "lectures/lec1_conceptual-and-theoretical-frameworks.html#slide-1",
-    "title": "Conceptual and theoretical frameworks for decision modeling",
+    "objectID": "capstone/cap_summarize.html",
+    "href": "capstone/cap_summarize.html",
+    "title": "Capstone Exercise 6: Summarize",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "capstone/cap_strategies.html",
+    "href": "capstone/cap_strategies.html",
+    "title": "Capstone Exercise 2: Identify treatment and policy strategies",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "capstone/cap_results.html",
+    "href": "capstone/cap_results.html",
+    "title": "Capstone Exercise 5: Results",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "capstone/cap_parameterize.html",
+    "href": "capstone/cap_parameterize.html",
+    "title": "Capstone Exercise 4: Parameterize the Model",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "capstone/cap_specify-the-problem.html",
+    "href": "capstone/cap_specify-the-problem.html",
+    "title": "Capstone Exercise 1: Specify the Decision Problem",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "capstone/cap_markov-structure.html",
+    "href": "capstone/cap_markov-structure.html",
+    "title": "Capstone Exercise 3: Map Out a Markov Structure",
+    "section": "",
+    "text": "Download Excel Template"
+  },
+  {
+    "objectID": "lectures/lec_parameters.html#slide-1",
+    "href": "lectures/lec_parameters.html#slide-1",
+    "title": "6. Curating and transforming model parameters",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_summarizing-model-outputs.html#slide-1",
+    "href": "lectures/lec_summarizing-model-outputs.html#slide-1",
+    "title": "7. Summarizing model outputs",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_foundations-of-cost-effectiveness-analysis.html#slide-1",
+    "href": "lectures/lec_foundations-of-cost-effectiveness-analysis.html#slide-1",
+    "title": "2. Foundations of cost-effectiveness analysis",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_incrementa-cea.html#slide-1",
+    "href": "lectures/lec_incrementa-cea.html#slide-1",
+    "title": "3. Incremental cost-effectiveness anlaysis",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_psa.html#slide-1",
+    "href": "lectures/lec_psa.html#slide-1",
+    "title": "9. Probabilistic Sensitivity Analysis",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_markov.html#slide-1",
+    "href": "lectures/lec_markov.html#slide-1",
+    "title": "4. Introduction to Markov Modeling",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_conceptual-and-theoretical-frameworks.html#slide-1",
+    "href": "lectures/lec_conceptual-and-theoretical-frameworks.html#slide-1",
+    "title": "1. Conceptual and theoretical frameworks for decision modeling",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_one-way-sensitivity.html#slide-1",
+    "href": "lectures/lec_one-way-sensitivity.html#slide-1",
+    "title": "8. One-Way Sensitivity Analysis",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_decision-criteria-and-dissemination.html#slide-1",
+    "href": "lectures/lec_decision-criteria-and-dissemination.html#slide-1",
+    "title": "10. Decision Criteria and Stakeholder Dissemination",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_microsimulation-and-des.html#slide-1",
+    "href": "lectures/lec_microsimulation-and-des.html#slide-1",
+    "title": "11. Introduction to Microsimulation and Discrete Event Simulation",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "lectures/lec_structure.html#slide-1",
+    "href": "lectures/lec_structure.html#slide-1",
+    "title": "5. Structuring the Markov Model",
     "section": "Slide 1",
     "text": "Slide 1\nSlide 1 content."
   },
@@ -25,6 +179,6 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page will show the schedule."
+    "text": "schedule <- list(\n  day1 = list(\n    \"8:00 - 8:15\" = \"L] Welcome and announcements\",\n    \"8:15 - 9:15\" = \"L] Conceptual and theoretical frameworks for decision modeling\",\n    \"9:30 - 10:15\" = \"CS] Examples of decision analyses\",\n    \"10:30 - 11:30\" = \"L] Foundations of cost-effectiveness analysis\",\n    \"11:45 - 12:30\"  = \"CAP] Specify the decision problem\",\n    \"1:30 - 3:00\" = \"L] Incremental cost-effectiveness analysis\",\n    \"3:15 - 4:00\" = \"CAP] Identify treatment and policy strategies\"\n  ), \n  day2 = list(\n    \n  ), \n  day3 = list(\n    \n  ), \n  day4 = list(\n    \n  ), \n  day5 = list(\n    \n  )\n)"
   }
 ]
