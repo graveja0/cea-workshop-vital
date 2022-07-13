@@ -9,7 +9,6 @@ website:
     collapse-level: 1
     contents:
       - index.qmd
-      - schedule.qmd
       - section: "Slides"
         contents:
           - lectures/lec_conceptual-and-theoretical-frameworks.qmd

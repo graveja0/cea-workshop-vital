@@ -1,5 +1,119 @@
 ---
-title: "Home"
+title: "Health Economics Modeling Workshop"
 ---
 
-This is the landing page.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(gt)
+schedule <- list(
+  day1 = list(
+    "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "13:30 - 15:00" = "L] Incremental cost-effectiveness analysis",
+    "15:15 - 16:00" = "CAP] Identify treatment and policy strategies"
+  ), 
+  day2 = list(
+     "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "13:30 - 15:00" = "L] Incremental cost-effectiveness analysis",
+    "15:15 - 16:00" = "CAP] Identify treatment and policy strategies"
+  ), 
+  day3 = list(
+     "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "13:30 - 15:00" = "L] Incremental cost-effectiveness analysis",
+    "15:15 - 16:00" = "CAP] Identify treatment and policy strategies"
+  ), 
+  day4 = list(
+      "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "13:30 - 15:00" = "L] Incremental cost-effectiveness analysis",
+    "15:15 - 16:00" = "CAP] Identify treatment and policy strategies"
+  ), 
+  day5 = list(
+    "8:00 - 8:15" = "L] Welcome and announcements",
+    "8:15 - 9:15" = "L] Conceptual and theoretical frameworks for decision modeling",
+    "9:30 - 10:15" = "CS] Examples of decision analyses",
+    "10:30 - 11:30" = "L] Foundations of cost-effectiveness analysis",
+    "11:45 - 12:30"  = "CAP] Specify the decision problem",
+    "13:30 - 15:00" = "L] Incremental cost-effectiveness analysis",
+    "15:15 - 16:00" = "CAP] Identify treatment and policy strategies"
+  )
+)
+schedule %>% 
+  map(~(
+  .x %>% 
+  bind_rows() %>% 
+  t() %>% 
+  data.frame() %>% 
+  rownames_to_column(var = "time") %>% 
+  separate(time,into =c("start","stop"),sep=" - ") %>% 
+  set_names(c("start","stop","desc")))) %>% 
+  bind_rows(.id = "day") %>% 
+  separate(desc, into = c("type","desc"), sep = "] ") %>% 
+  gt() %>% 
+  tab_header(title = "Schedule") %>% 
+  fmt_time(columns = c(start,stop),time_style = 4) %>% 
+  cols_hide(columns = c(type,day)) %>% 
+  cols_label(
+    start = "",
+    stop = "",
+    desc = ""
+  ) %>% 
+      tab_row_group(label = "Saturday",
+                rows = day=="day5") %>% 
+      tab_row_group(label = "Friday",
+                rows = day=="day4") %>% 
+      tab_row_group(label = "Thursday",
+                rows = day=="day3") %>% 
+      tab_row_group(label = "Wednesday",
+                rows = day=="day2") %>% 
+  tab_row_group(label = "Tuesday",
+                rows = day=="day1") %>% 
+  tab_style(
+    style = list(
+      cell_fill(color = "#8ACEFA")
+    ),
+    locations = cells_body(
+      columns = c(start,stop,desc),
+      rows = type=="L"
+    )
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_fill(color = "#8FFA8A")
+    ),
+    locations = cells_body(
+      columns = c(start,stop,desc),
+      rows = type=="CS"
+    )
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_fill(color = "#DF8AFA")
+    ),
+    locations = cells_body(
+      columns = c(start,stop,desc),
+      rows = type=="CAP"
+    )
+  )
+
+
+
+
+
+```
+

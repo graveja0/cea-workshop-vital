@@ -15,69 +15,6 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -148,11 +85,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">Home</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">Schedule</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -326,31 +258,562 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This page will show the schedule.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>schedule <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">day1 =</span> <span class="fu">list</span>(</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8:00 - 8:15"</span> <span class="ot">=</span> <span class="st">"L] Welcome and announcements"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8:15 - 9:15"</span> <span class="ot">=</span> <span class="st">"L] Conceptual and theoretical frameworks for decision modeling"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"9:30 - 10:15"</span> <span class="ot">=</span> <span class="st">"CS] Examples of decision analyses"</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"10:30 - 11:30"</span> <span class="ot">=</span> <span class="st">"L] Foundations of cost-effectiveness analysis"</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"11:45 - 12:30"</span>  <span class="ot">=</span> <span class="st">"CAP] Specify the decision problem"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"1:30 - 3:00"</span> <span class="ot">=</span> <span class="st">"L] Incremental cost-effectiveness analysis"</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"3:15 - 4:00"</span> <span class="ot">=</span> <span class="st">"CAP] Identify treatment and policy strategies"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  ), </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">day2 =</span> <span class="fu">list</span>(</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  ), </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">day3 =</span> <span class="fu">list</span>(</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  ), </span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">day4 =</span> <span class="fu">list</span>(</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  ), </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">day5 =</span> <span class="fu">list</span>(</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="frdxtovtff" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#frdxtovtff .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#frdxtovtff .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#frdxtovtff .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#frdxtovtff .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#frdxtovtff .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#frdxtovtff .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#frdxtovtff .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#frdxtovtff .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#frdxtovtff .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#frdxtovtff .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#frdxtovtff .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#frdxtovtff .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#frdxtovtff .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#frdxtovtff .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#frdxtovtff .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#frdxtovtff .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#frdxtovtff .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#frdxtovtff .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#frdxtovtff .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#frdxtovtff .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#frdxtovtff .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#frdxtovtff .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#frdxtovtff .gt_left {
+  text-align: left;
+}
+
+#frdxtovtff .gt_center {
+  text-align: center;
+}
+
+#frdxtovtff .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#frdxtovtff .gt_font_normal {
+  font-weight: normal;
+}
+
+#frdxtovtff .gt_font_bold {
+  font-weight: bold;
+}
+
+#frdxtovtff .gt_font_italic {
+  font-style: italic;
+}
+
+#frdxtovtff .gt_super {
+  font-size: 65%;
+}
+
+#frdxtovtff .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#frdxtovtff .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#frdxtovtff .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#frdxtovtff .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#frdxtovtff .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#frdxtovtff .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Schedule</th>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <td colspan="3" class="gt_group_heading">Tuesday</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:00 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Welcome and announcements</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">9:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Conceptual and theoretical frameworks for decision modeling</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8FFA8A;">9:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">10:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">Examples of decision analyses</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">10:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">11:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Foundations of cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">11:45 AM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">12:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Specify the decision problem</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">1:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">3:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Incremental cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">3:15 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">4:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Identify treatment and policy strategies</td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="3" class="gt_group_heading">Wednesday</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:00 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Welcome and announcements</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">9:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Conceptual and theoretical frameworks for decision modeling</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8FFA8A;">9:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">10:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">Examples of decision analyses</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">10:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">11:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Foundations of cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">11:45 AM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">12:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Specify the decision problem</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">1:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">3:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Incremental cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">3:15 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">4:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Identify treatment and policy strategies</td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="3" class="gt_group_heading">Thursday</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:00 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Welcome and announcements</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">9:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Conceptual and theoretical frameworks for decision modeling</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8FFA8A;">9:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">10:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">Examples of decision analyses</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">10:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">11:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Foundations of cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">11:45 AM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">12:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Specify the decision problem</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">1:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">3:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Incremental cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">3:15 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">4:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Identify treatment and policy strategies</td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="3" class="gt_group_heading">Friday</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:00 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Welcome and announcements</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">9:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Conceptual and theoretical frameworks for decision modeling</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8FFA8A;">9:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">10:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">Examples of decision analyses</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">10:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">11:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Foundations of cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">11:45 AM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">12:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Specify the decision problem</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">1:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">3:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Incremental cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">3:15 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">4:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Identify treatment and policy strategies</td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="3" class="gt_group_heading">Saturday</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:00 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Welcome and announcements</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">8:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">9:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Conceptual and theoretical frameworks for decision modeling</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8FFA8A;">9:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">10:15 AM</td>
+<td class="gt_row gt_left" style="background-color: #8FFA8A;">Examples of decision analyses</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">10:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">11:30 AM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Foundations of cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">11:45 AM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">12:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Specify the decision problem</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #8ACEFA;">1:30 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">3:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #8ACEFA;">Incremental cost-effectiveness analysis</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #DF8AFA;">3:15 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">4:00 PM</td>
+<td class="gt_row gt_left" style="background-color: #DF8AFA;">Identify treatment and policy strategies</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
 </div>
 
 
