@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "This is the landing page."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "lectures/lec1_conceptual-and-theoretical-frameworks.html#slide-1",
+    "href": "lectures/lec1_conceptual-and-theoretical-frameworks.html#slide-1",
+    "title": "Conceptual and theoretical frameworks for decision modeling",
+    "section": "Slide 1",
+    "text": "Slide 1\nSlide 1 content."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This page will show the schedule."
+  }
+]

@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Health Economics Modeling Workshop"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - schedule.qmd
+      - section: "Slides"
+        contents:
+          - lectures/lec1_conceptual-and-theoretical-frameworks.qmd
+      - section: "Case Studies"
+      - section: "Capstone Exercises"
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
