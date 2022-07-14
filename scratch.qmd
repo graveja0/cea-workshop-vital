@@ -1,0 +1,7 @@
+---
+title: "planning"
+---
+
+-   Let's order enough USB drives so we can have everything loaded up offline, just in case.
+
+-   

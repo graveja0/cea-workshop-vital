@@ -1,8 +1,12 @@
 project:
   type: website
+  resources:
+    - "*.xlsx"
 
 website:
   title: "Health Economics Modeling Workshop"
+  margin-footer: |
+    ![](composite-logo.png)
   sidebar:
     style: "floating"
     search: false
@@ -38,7 +42,7 @@ website:
           - capstone/cap_parameterize.qmd
           - capstone/cap_results.qmd
           - capstone/cap_summarize.qmd
-
+      - scratch.qmd
 format:
   html:
     theme: cosmo
