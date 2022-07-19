@@ -8,3 +8,5 @@
 /.condaenv/
 *_cache/
 /env/
+ignore/
+reference/
